@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator{
+  flex: 0 0 40%;
+}
+
+.screen{
+  width: 100%;
+  font-size: 6rem;
+  padding: 0.5rem;
+  background: darkblue;
+  color: #fff;
+  border: none;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.buttons{
+  display: flex;
+  flex-wrap: wrap;
+  transition: all 0.5s linear;
+}
+button{
+  flex: 0 0 25%;
+  border: 0.5px solid black;
+  padding: 0.25rem 0;
+  transition:  all 2s ease;
+  font-size: 3rem;
+  background:#fff;
+}
+
+button:hover{
+  background: darkcyan;
+}
+.btn-yellow{
+  background: darkgoldenrod;
+  color: #fff;
+}
+
+.btn-equal{
+  background: green;
+}
+.btn-clear{
+  background: red;
+}
